@@ -1,0 +1,70 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: #777777;
+    position: relative;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-family: 'Spartan', sans-serif;
+    /* overflow: hidden; */
+}
+.logo {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    max-width: 460px;
+    top: 20%;
+    animation: startLogo 1s forwards ease-in-out 0.5s;
+}
+.container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+    z-index: 5;
+    opacity: 0;
+    animation: startText 0.5s forwards ease-in-out 1s;
+    padding: 350px 20px 310px;
+}
+.bg {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 7;
+    max-height: 60%;
+    pointer-events: none;
+    animation: startBg 1s forwards ease-in-out 0.5s;
+}
+
+@keyframes startLogo {
+    0% {
+        transform: scale(1) translateY(0px);
+    }
+    100% {
+        transform: scale(0.5) translateY(-340px);
+    }
+}
+
+@keyframes startText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes startBg {
+    0% {
+        transform: scale(1) translateY(0px);
+    }
+    100% {
+        transform: scale(1.1) translateY(160px);
+    }
+}

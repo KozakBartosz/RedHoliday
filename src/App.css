@@ -1,0 +1,18 @@
+.app {
+    text-align: center;
+    max-width: 400px;
+    padding: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+nav {
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    padding: 10px;
+}
+
+span {
+    display: inline-block;
+}
